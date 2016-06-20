@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Active microorganisms in forest soils differ from the total community yet are shaped by the same environmental factors: the influence of pH and soil moisture by ZakLab-Soils</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Active microorganisms in forest soils differ from the total community yet are shaped by the same environmental factors: the influence of pH and soil moisture</h1>
+        <p>Romanowicz et al. 2016 (FEMS Microbiology Ecology - In Revision) repository for raw sequence reads, .oligos files, mothur bioinformatic pipeline, and R statistics</p>
+
+        <p class="view"><a href="https://github.com/ZakLab-Soils/MI_Gradient_Romanowicz_2016">View the Project on GitHub <small>ZakLab-Soils/MI_Gradient_Romanowicz_2016</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ZakLab-Soils/MI_Gradient_Romanowicz_2016/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ZakLab-Soils/MI_Gradient_Romanowicz_2016/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ZakLab-Soils/MI_Gradient_Romanowicz_2016">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="title-active-microorganisms-in-forest-soils-differ-from-the-total-community-yet-are-shaped-by-the-same-environmental-factors-the-influence-of-ph-and-soil-moisture" class="anchor" href="#title-active-microorganisms-in-forest-soils-differ-from-the-total-community-yet-are-shaped-by-the-same-environmental-factors-the-influence-of-ph-and-soil-moisture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Title:</strong> Active microorganisms in forest soils differ from the total community yet are shaped by the same environmental factors: the influence of pH and soil moisture</h3>
+
+<h3>
+<a id="authors-karl-j-romanowicz-zachary-b-freedman-rima-a-upchurch-william-a-argiroff-and-donald-r-zak" class="anchor" href="#authors-karl-j-romanowicz-zachary-b-freedman-rima-a-upchurch-william-a-argiroff-and-donald-r-zak" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Authors:</strong> Karl J. Romanowicz, Zachary B. Freedman, Rima A. Upchurch, William A. Argiroff, and Donald R. Zak</h3>
+
+<h5>
+<a id="submitted-for-review-in-fems-microbiology-ecology-on-march-22-2016" class="anchor" href="#submitted-for-review-in-fems-microbiology-ecology-on-march-22-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submitted for review in <strong><em>FEMS Microbiology Ecology</em></strong> on March 22, 2016</h5>
+
+<hr>
+
+<p>This repository is associated with the manuscript <strong><em>"Active microorganisms in forest soils differ from the total community yet are shaped by the same environmental factors: the influence of pH and soil moisture"</em></strong> written by Karl J. Romanowicz, Zachary B. Freedman, Rima A. Upchurch, William A. Argiroff, and Donald R. Zak at the University of Michigan. Links are provided to the original raw sequencing data stored in the Sequence Read Archive at NCBI. Data stored in this repository include all .oligos files for extracting sample plot data from barcoded sequencing runs, final output files generated from the MOTHUR bioinformatic pipeline and used in all downstream statistics, and the RMarkdown dynamic document with rendered statistical code. The full MOTHUR batch files and associated reference databases are also included for reproducibility purposes.</p>
+
+<p>Link to the rendered code file for production of all figures and statistical analyses <em>(created with MI-Gradient-Romanowicz-2016.Rmd)</em>: <a href="http://rpubs.com/kjromano/MI-Gradient-2016">http://rpubs.com/kjromano/MI-Gradient-2016</a></p>
+
+<p>Direct any questions regarding this repository to lead author <a href="mailto:kjromano@umich.edu">Karl J. Romanowicz</a>.</p>
+
+<hr>
+
+<h4>
+<a id="information-about-this-repository" class="anchor" href="#information-about-this-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Information about this repository</h4>
+
+<h5>
+<a id="original-fastq-files" class="anchor" href="#original-fastq-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Original .fastq files:</strong>
+</h5>
+
+<p>The original .fastq files were submitted to the NCBI Sequence Read Archive under BioProject <a href="http://www.ncbi.nlm.nih.gov/bioproject/PRJNA222775">PRJNA222775</a> with SRA accession numbers <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1944476">SRR1944476</a> and <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR1944477">SRR1944477</a>.</p>
+
+<h5>
+<a id="directories" class="anchor" href="#directories" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Directories:</strong>
+</h5>
+
+<ol>
+<li>
+<p><strong>Data:</strong> Includes final output files from <strong>MOTHUR</strong> necessary to run statistics in <strong>R</strong> as well as the environmental metadata <code>env.txt</code> necessary for PERMANOVA analyses.</p>
+
+<ul>
+<li>
+<strong>Bacteria:</strong> all <code>.oligos</code> files for separating bacterial reads by plot</li>
+<li>
+<strong>Fungi:</strong> all <code>.oligos</code> files for separating fungal reads by plot</li>
+<li>
+<strong>mothur.reference:</strong> 16S and 28S reference database files used for alignment and taxonomy assignment purposes for bacteria and fungi.</li>
+<li>
+<strong>mothur.output:</strong> final MOTHUR files created from pipeline and used in all downstream statistics. Provided here for reproducibility.
+
+<ul>
+<li>MOTHUR <code>cons.tax.summary</code> files</li>
+<li>MOTHUR <code>groups.summary</code> files</li>
+<li>MOTHUR <code>.shared</code> files</li>
+</ul>
+</li>
+</ul>
+
+<p><em>ZIP files need to be extracted and all resulting files placed directly in their</em> <strong>corresponding directory folder</strong> <em>for batch files to operate correctly.</em></p>
+</li>
+<li>
+<p><strong>MOTHUR_batch:</strong> includes two batch files for processing raw PacBio sequencing data through a custom MOTHUR bioinformatic pipeline.</p>
+
+<ul>
+<li>
+<code>bacteria.master.list.subsample.batch</code> Bacteria MOTHUR batch file</li>
+<li>
+<code>fungi.master.list.subsample.batch</code> Fungi MOTHUR batch file</li>
+</ul>
+</li>
+<li><p><strong>MI-Gradient-Romanowicz-2016.Rmd:</strong> RMarkdown dynamic document with rendered code for complete statistical reproducibility within the R environment.</p></li>
+</ol>
+
+<p><strong>Note:</strong> This project is under the General MIT Public License.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ZakLab-Soils">ZakLab-Soils</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
